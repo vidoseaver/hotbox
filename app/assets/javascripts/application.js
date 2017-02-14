@@ -12,4 +12,25 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= axios_rails
 //= require_tree .
+
+function getAllLinks(){
+   axios.get('http://vido-urlockbox.herokuapp.com/api/v1/links')
+  .then(function (response) {
+    renderAllLinksToPage(response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
+
+function renderAllLinksToPage(links_list=[]){
+  var list = links_list
+  list.forEach(function(link){
+    var row = "<tr id=all-links-link-id-" + link.id + "> <td> " + link.title + "</td><td>" + link.url + "</td><td>" + link.read + "</td></tr>"
+    $("#all-links-tbody").append(row)
+  })
+}
+
+getAllLinks()

@@ -39,6 +39,7 @@ gem 'twilio-ruby', '~> 4.11.1'
 gem 'public_activity'
 gem 'valid_url'
 gem 'rack-cors', :require => 'rack/cors'
+gem 'axios_rails', '~> 0.7.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -52,6 +53,7 @@ group :development, :test do
   gem 'simplecov' #so we can tell what's being hit
   gem 'database_cleaner' #keep it clean
   gem 'selenium-webdriver'
+  gem 'pry-byebug'
 end
 
 group :development do
