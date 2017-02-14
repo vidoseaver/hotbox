@@ -1,8 +1,8 @@
-source 'https://rubygems.org'
+source 'httpss://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
+  "httpss://github.com/#{repo_name}.git"
 end
 
 
@@ -18,12 +18,12 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
-# See https://github.com/rails/execjs#readme for more supported runtimes
+# See httpss://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Build JSON APIs with ease. Read more: httpss://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -33,7 +33,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rb-readline' #make pry work
 gem 'figaro' #hide our stuff
 gem 'active_model_serializers'
-gem 'faraday' #for http requests
+gem 'faraday' #for https requests
 gem 'faker' # for seed data
 gem 'twilio-ruby', '~> 4.11.1'
 gem 'public_activity'

@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe HotboxController, type: :controller do
 
   describe "GET #index" do
-    it "returns http success" do
+    it "returns https success" do
       get :index
-      expect(response).to have_http_status(:success)
+      expect(response).to have_https_status(:success)
     end
   end
 
