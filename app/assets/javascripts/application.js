@@ -16,7 +16,7 @@
 //= require_tree .
 
 function getAllLinks(){
-   axios.get('http://vido-urlockbox.herokuapp.com/api/v1/links')
+   axios.get('https://vido-urlockbox.herokuapp.com/api/v1/links')
   .then(function (response) {
     renderAllLinksToPage(response.data)
   })
