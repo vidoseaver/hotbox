@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
 
-  get 'hotbox/index'
-
   root to: "hotbox#index"
 
 
